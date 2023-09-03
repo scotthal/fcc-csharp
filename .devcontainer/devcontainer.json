@@ -1,0 +1,19 @@
+{
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "dotnet",
+  "workspaceFolder": "/workspaces/dotnet",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "editorconfig.editorconfig",
+        "ms-dotnettools.csharp",
+        "visualstudioexpteam.vscodeintellicode"
+      ]
+    }
+  },
+  "postCreateCommand": [
+    "sh",
+    ".devcontainer/update-paths.sh"
+  ]
+  // forwardPorts here
+}
